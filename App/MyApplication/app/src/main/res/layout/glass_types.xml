@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drink_Types"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/smalllayout"
+        android:layout_marginTop="0.5in"
+        android:layout_marginBottom="0.2in"
+
+        >
+
+        <ImageView
+            android:id="@+id/smallimage"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/smallglass"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/smalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/medium_glass"
+            android:layout_gravity="center"
+            android:text="small :100 Ml"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mediumlayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="0.2in"
+        android:layout_marginBottom="0.2in"
+            >
+
+            <ImageView
+                android:id="@+id/medium_img"
+                android:layout_width="0.8in"
+                android:layout_height="0.8in"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/small" />
+
+        <TextView
+            android:id="@+id/medium_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/simpleImageViewLion"
+            android:layout_gravity="center"
+            android:text="medium :150 Ml"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/largelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="290dp"
+
+        android:layout_marginBottom="0.2in">
+
+        <ImageView
+            android:id="@+id/large_img"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:layout_below="@+id/simpleImageViewLion"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/medium" />
+
+        <TextView
+            android:id="@+id/large_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/medium_glass"
+            android:gravity="center"
+            android:text="Large :200 Ml"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
