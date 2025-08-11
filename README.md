@@ -17,4 +17,6 @@ This project involves the development of an automated beverage preparation machi
 - **MQTT (HiveMQ)**: For communication between the Android app and the beverage machine.
 - **C++**: The programming language used to control the beverage machine hardware.
 
+##[Video-demo](https://drive.google.com/file/d/1ABk0oDo1UVvRE0KKM5ujajaTXTCoPzrD/view)
+
 
